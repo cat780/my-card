@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff5ed">
+    <title>Catalina's Digital Trading Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <p class="page-label">A little card, a lot of character</p>
+
+      <div class="card-scene" tabindex="0" aria-label="Catalina's trading card. Hover or focus to flip it.">
+        <div class="card-flipper">
+          <article class="trading-card card-face card-front" aria-labelledby="card-name">
+            <div class="card-topline">
+              <span class="card-series">THE ORIGINAL SERIES</span>
+              <span class="card-topline-details">
+                <span class="card-animal" role="img" aria-label="Fox">🦊</span>
+                <span class="card-type"><span aria-hidden="true">✦</span> FIRE</span>
+              </span>
+            </div>
+
+            <div class="portrait" aria-hidden="true">
+              <span class="portrait-orbit"></span>
+              <span class="portrait-initial">C</span>
+              <span class="portrait-caption">CATALINA'S CARD</span>
+            </div>
+
+            <section class="identity">
+              <p class="eyebrow">MEET THE CARDHOLDER</p>
+              <h1 id="card-name">Catalina</h1>
+              <p class="major"><span class="label">MAJOR</span> Computer Science and Engineering</p>
+            </section>
+
+            <section class="stats" aria-label="Card stats">
+              <div class="stat">
+                <span class="stat-name">Playlist Wizardry</span>
+                <span class="stat-value">94<small>/100</small></span>
+              </div>
+              <div class="stat">
+                <span class="stat-name">Snack Detection</span>
+                <span class="stat-value">88<small>/100</small></span>
+              </div>
+              <div class="stat">
+                <span class="stat-name">Tab Juggling</span>
+                <span class="stat-value">97<small>/100</small></span>
+              </div>
+            </section>
+
+            <section class="ability" aria-labelledby="ability-title">
+              <div class="ability-icon" aria-hidden="true">✧</div>
+              <div>
+                <p class="eyebrow">SPECIAL ABILITY</p>
+                <h2 id="ability-title">Photographic Memory</h2>
+                <p class="ability-copy">Remembers the details others miss.</p>
+              </div>
+            </section>
+
+            <button class="activate-button" type="button" aria-pressed="false">
+              Activate ability
+              <span aria-hidden="true">&rarr;</span>
+            </button>
+            <p class="card-status" aria-live="polite">Your next adventure is waiting.</p>
+
+            <div class="card-footer">
+              <span>Hand-directed by me, built with AI</span>
+            </div>
+          </article>
+
+          <div class="trading-card card-face card-back" aria-hidden="true">
+            <span class="back-label">CATALINA · FIRE TYPE</span>
+            <svg class="back-flame" viewBox="0 0 300 400" role="img" aria-label="A pastel fire-colored flame">
+              <defs>
+                <linearGradient id="flame-gradient" x1="0" x2="1" y1="1" y2="0">
+                  <stop offset="0" stop-color="#ef8d7e"/>
+                  <stop offset="0.55" stop-color="#f6b27d"/>
+                  <stop offset="1" stop-color="#ffe5a6"/>
+                </linearGradient>
+              </defs>
+              <path fill="url(#flame-gradient)" d="M157 7c18 67 83 85 70 159 32-18 44-54 40-83 43 55 49 102 34 157-19 72-78 119-151 119S17 311 17 237c0-69 49-119 93-188-3 53 14 76 27 92 13-43 24-87 20-134Z"/>
+              <path fill="#fff2c9" d="M155 140c2 39-24 59-22 96-23-10-34-29-34-50-26 31-37 57-32 86 7 42 42 69 86 69s79-28 86-70c7-43-20-72-39-98 0 23-10 39-24 48 4-32-8-58-21-81Z"/>
+              <path fill="#f7be78" d="M153 220c-8 28-29 38-29 66 0 19 13 34 30 34s31-15 31-34c0-26-18-43-32-66Z"/>
+            </svg>
+            <span class="back-caption">A LITTLE SPARK. A LOT OF HEART.</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="quiz-section" aria-labelledby="quiz-start">
+        <button class="quiz-launch" id="quiz-start" type="button">Personality Quiz</button>
+        <div class="quiz-panel" id="quiz-panel" hidden>
+          <p class="quiz-progress" id="quiz-progress" aria-live="polite"></p>
+          <h2 class="quiz-question" id="quiz-question"></h2>
+          <div class="quiz-options" id="quiz-options" role="group" aria-labelledby="quiz-question"></div>
+          <p class="quiz-result" id="quiz-result" aria-live="polite"></p>
+          <button class="quiz-restart" id="quiz-restart" type="button" hidden>Take the quiz again</button>
+        </div>
+      </section>
+
+      <p class="page-note">Your story is still being written.</p>
+    </main>
+  </body>
+</html>
