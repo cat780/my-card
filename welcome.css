@@ -1,0 +1,104 @@
+:root {
+  color-scheme: light;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  background: #fff5ed;
+  color: #493342;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 50% 12%, rgb(255 190 150 / 48%), transparent 42%),
+    radial-gradient(ellipse at 10% 90%, rgb(247 190 188 / 30%), transparent 35%),
+    #fff5ed;
+}
+
+.welcome-page {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 24px 18px;
+}
+
+.welcome-card {
+  width: min(100%, 560px);
+  padding: clamp(24px, 6vw, 42px);
+  border: 1px solid rgb(255 255 255 / 82%);
+  border-radius: 26px;
+  background: linear-gradient(145deg, #fff9e9, #ffe6d6 58%, #f8dce2);
+  box-shadow:
+    0 28px 80px rgb(143 78 66 / 20%),
+    0 0 0 5px rgb(255 255 255 / 45%);
+  text-align: center;
+}
+
+.welcome-eyebrow {
+  margin: 0 0 12px;
+  color: #a47778;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.welcome-card h1 {
+  margin: 0;
+  color: #493342;
+  font-size: clamp(2rem, 8vw, 3.2rem);
+  letter-spacing: -0.06em;
+  line-height: 1.08;
+}
+
+.welcome-description {
+  margin: 18px 0 0;
+  color: #644b50;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.welcome-hint {
+  margin: 12px 0 24px;
+  color: #8d7376;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.welcome-button {
+  display: inline-block;
+  min-width: 190px;
+  padding: 14px 22px;
+  border: 1px solid rgb(255 255 255 / 80%);
+  border-radius: 13px;
+  background: linear-gradient(120deg, #e98c72, #d96d62);
+  box-shadow: 0 8px 22px rgb(143 78 66 / 15%);
+  color: #fffaf2;
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.welcome-button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+.welcome-button:focus-visible {
+  outline: 3px solid #e49a80;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
