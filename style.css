@@ -31,7 +31,7 @@ button {
   justify-items: center;
   align-content: center;
   gap: 18px;
-  padding: 32px 18px;
+  padding: 88px 18px 32px;
 }
 
 .page-label,
@@ -50,6 +50,41 @@ button {
 .page-note {
   color: #aa8580;
   letter-spacing: 0.02em;
+}
+
+.help-links {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.82rem;
+}
+
+.help-links a {
+  min-width: 132px;
+  padding: 10px 14px;
+  border: 1px solid rgb(255 255 255 / 82%);
+  border-radius: 12px;
+  background: linear-gradient(120deg, #e98c72, #d96d62);
+  box-shadow: 0 8px 22px rgb(143 78 66 / 15%);
+  color: #fffaf2;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.help-links a:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+.help-links a:focus-visible {
+  outline: 3px solid #e49a80;
+  outline-offset: 3px;
 }
 
 .card-scene {

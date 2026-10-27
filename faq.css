@@ -1,0 +1,148 @@
+:root {
+  color-scheme: light;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  background: #fff5ed;
+  color: #493342;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 50% 12%, rgb(255 190 150 / 48%), transparent 42%),
+    radial-gradient(ellipse at 10% 90%, rgb(247 190 188 / 30%), transparent 35%),
+    #fff5ed;
+}
+
+a {
+  color: #995b57;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: #a94f4a;
+}
+
+a:focus-visible,
+.faq-search:focus-visible,
+.faq-item summary:focus-visible {
+  border-radius: 4px;
+  outline: 3px solid #e49a80;
+  outline-offset: 3px;
+}
+
+.help-page {
+  width: min(100% - 36px, 720px);
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 30px;
+  font-size: 0.88rem;
+}
+
+.help-header {
+  margin-bottom: 26px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #a47778;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+h1 {
+  margin: 0;
+  color: #493342;
+  font-size: clamp(2rem, 7vw, 2.8rem);
+  letter-spacing: -0.05em;
+  line-height: 1.1;
+}
+
+.help-header > p:last-child {
+  margin: 12px 0 0;
+  color: #80666c;
+  line-height: 1.6;
+}
+
+.search-label {
+  display: block;
+  margin-bottom: 7px;
+  color: #644b50;
+  font-size: 0.83rem;
+  font-weight: 700;
+}
+
+.faq-search {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e8cfc5;
+  border-radius: 12px;
+  background: rgb(255 255 255 / 78%);
+  color: #493342;
+  font: inherit;
+}
+
+.faq-search::placeholder {
+  color: #a78a87;
+}
+
+.faq-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.faq-item {
+  padding: 0 17px;
+  border: 1px solid #f0d4ca;
+  border-radius: 14px;
+  background: rgb(255 255 255 / 72%);
+}
+
+.faq-item summary {
+  padding: 16px 0;
+  color: #573d45;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.faq-item p {
+  margin: -2px 0 16px;
+  color: #80666c;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.no-results {
+  margin: 20px 0 0;
+  color: #80666c;
+}
+
+.help-footer {
+  margin-top: 28px;
+  padding-top: 17px;
+  border-top: 1px solid #efd8cf;
+  font-size: 0.9rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}

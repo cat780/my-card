@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff5ed">
+    <title>Contact Support | Catalina's Digital Trading Card</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js" defer></script>
+  </head>
+  <body>
+    <main class="help-page">
+      <a class="back-link" href="index.html">&larr; Back to the trading card</a>
+      <header class="help-header">
+        <p class="eyebrow">HERE TO HELP</p>
+        <h1>Contact support</h1>
+        <p>Have a question about the card or quiz? Get in touch or draft a message below.</p>
+      </header>
+
+      <section class="contact-card" aria-labelledby="contact-details">
+        <h2 id="contact-details">Support desk</h2>
+        <p>These are fictional contact details for this demo website.</p>
+        <dl class="contact-details">
+          <div>
+            <dt>Email</dt>
+            <dd><a href="mailto:support@littlecard.example">support@littlecard.example</a></dd>
+          </div>
+          <div>
+            <dt>Phone</dt>
+            <dd><a href="tel:+15550102048">+1 (555) 010-2048</a></dd>
+          </div>
+          <div>
+            <dt>Mailing address</dt>
+            <dd>42 Cardmaker Lane, Suite 7, Cardville, CA 90000</dd>
+          </div>
+          <div>
+            <dt>Hours</dt>
+            <dd>Monday–Friday, 9:00 a.m.–5:00 p.m. Pacific</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="contact-card form-card" aria-labelledby="question-title">
+        <h2 id="question-title">Send us a question</h2>
+        <p>Submitting this form opens your default email app with your message ready to send. Nothing is sent from this demo site.</p>
+        <form id="question-form">
+          <label for="name">Your name</label>
+          <input id="name" name="name" autocomplete="name" maxlength="100" required>
+
+          <label for="email">Your email</label>
+          <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" maxlength="120" required>
+
+          <label for="message">Your question</label>
+          <textarea id="message" name="message" rows="6" maxlength="2000" required></textarea>
+
+          <button type="submit">Draft email</button>
+          <p class="form-status" id="form-status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <footer class="help-footer">
+        <a href="faq.html">Browse the FAQs</a>
+      </footer>
+    </main>
+  </body>
+</html>
