@@ -1,8 +1,24 @@
 const questionForm = document.querySelector("#question-form");
 const formStatus = document.querySelector("#form-status");
+const emailInput = document.querySelector("#email");
+const emailError = document.querySelector("#email-error");
+
+emailInput.addEventListener("input", () => {
+  if (emailInput.validity.valid) {
+    emailError.hidden = true;
+    emailInput.removeAttribute("aria-invalid");
+  }
+});
 
 questionForm.addEventListener("submit", (event) => {
   event.preventDefault();
+
+  if (!emailInput.validity.valid) {
+    emailError.hidden = false;
+    emailInput.setAttribute("aria-invalid", "true");
+    emailInput.focus();
+    return;
+  }
 
   if (!questionForm.reportValidity()) {
     return;

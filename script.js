@@ -1,3 +1,6 @@
+const welcomeDialog = document.querySelector("#welcome-dialog");
+welcomeDialog.showModal();
+
 const activateButton = document.querySelector(".activate-button");
 const cardStatus = document.querySelector(".card-status");
 

@@ -43,12 +43,13 @@
       <section class="contact-card form-card" aria-labelledby="question-title">
         <h2 id="question-title">Send us a question</h2>
         <p>Submitting this form opens your default email app with your message ready to send. Nothing is sent from this demo site.</p>
-        <form id="question-form">
+        <form id="question-form" novalidate>
           <label for="name">Your name</label>
           <input id="name" name="name" autocomplete="name" maxlength="100" required>
 
           <label for="email">Your email</label>
-          <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+          <input id="email" name="email" type="email" autocomplete="email" maxlength="254" aria-describedby="email-error" required>
+          <p class="form-error" id="email-error" role="alert" hidden>Please enter a valid email.</p>
 
           <label for="subject">Subject</label>
           <input id="subject" name="subject" maxlength="120" required>
